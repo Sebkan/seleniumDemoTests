@@ -10,26 +10,17 @@ public class LogInTest extends BaseTest {
     public void logInWithValidData() {
         WebElement dashboardLink = new HomePage(driver)
                 .openMyAccountClick()
-                .logInValidData("test2@test.pl", "test2@test.pl")
+                .logInValidData("test4@test.pl", "test4@test.pl")
                 .getDashBoardLink();
         Assert.assertEquals(dashboardLink.getText(), "Dashboard");
     }
 
-    @Test
-    public void logInWithInvalidPassword() {
+    /*@Test
+    public void logInWithInvalidData() {
         WebElement error = new HomePage(driver)
                 .openMyAccountClick()
-                .logInInvalidData("test2@test.pl", "test")
+                .logInInvalidData("test666@test.pl", "test")
                 .getError();
         Assert.assertTrue(error.getText().contains("Incorrect"), "expected error text doesn't match");
-    }
-
-    @Test
-    public void logInWithInvalidUsername() {
-        WebElement error = new HomePage(driver)
-                .openMyAccountClick()
-                .logInInvalidData("test", "test")
-                .getError();
-        Assert.assertTrue(error.getText().contains("Incorrect"), "expected error text doesn't match");
-    }
+    }*/
 }

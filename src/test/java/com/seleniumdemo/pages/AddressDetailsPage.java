@@ -1,6 +1,7 @@
 package com.seleniumdemo.pages;
 
 import com.seleniumdemo.models.Customer;
+import com.seleniumdemo.utils.SeleniumHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -51,6 +52,7 @@ public class AddressDetailsPage {
         phoneInput.sendKeys(customer.getPhone());
         emailInput.sendKeys(customer.getEmail());
         orderCommentsInput.sendKeys(comments);
+        SeleniumHelper.waitForElementToBeClickable(driver,placeOrderButton);
         placeOrderButton.click();
         return new OrderDetailsPage(driver);
     }
