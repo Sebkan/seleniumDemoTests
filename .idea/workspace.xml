@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4cb0022-b9b0-4a7d-b422-2eb9e514469d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/LoggedUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/MyAccountPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/LogInTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/RegisterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/utils/DriverFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/AddressDetailsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/MyCartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/OrderDetailsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/ProductListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/CheckOutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +51,30 @@
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LogInTest.logInWithInvalidUsername">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.seleniumdemo.pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.CheckOutTest.buyProductTest">
+    <configuration name="CheckOutTest.buyProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seleniumdemo.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seleniumdemo.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.seleniumdemo.tests.CheckOutTest" />
+      <option name="METHOD_NAME" value="buyProductTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LogInTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumdemo" />
       <extension name="coverage">
@@ -129,30 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.seleniumdemo.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.seleniumdemo.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.seleniumdemo.tests.RegisterTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckOutTest.buyProductTest" />
+        <item itemvalue="TestNG.LogInTest" />
         <item itemvalue="TestNG.LogInTest.logInWithInvalidUsername" />
         <item itemvalue="TestNG.LogInTest.logInWithValidData" />
-        <item itemvalue="TestNG.LogInTest" />
         <item itemvalue="TestNG.LogInTest.logInWithInvalidPassword" />
-        <item itemvalue="TestNG.RegisterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -165,6 +165,18 @@
       <option name="presentableId" value="Default" />
       <updated>1664795466631</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit - new tests, pages added">
+      <created>1664877433662</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664877433663</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit - new tests, pages added" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit - new tests, pages added" />
   </component>
 </project>
