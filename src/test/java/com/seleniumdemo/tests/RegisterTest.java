@@ -12,7 +12,8 @@ public class RegisterTest extends BaseTest {
         String email = "test" + randomNumber + "@test.pl";
         WebElement dashBoardLink = new HomePage(driver)
                 .openMyAccountClick()
-                .registerAccountValidEmail(email, "Testtest12345!").getDashBoardLink();
+                .registerAccountValidEmail(email, "Testtest12345!")
+                .getDashBoardLink();
         Assert.assertEquals(dashBoardLink.getText(), "Dashboard");
     }
 

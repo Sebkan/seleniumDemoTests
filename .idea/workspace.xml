@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4cb0022-b9b0-4a7d-b422-2eb9e514469d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/AddressDetailsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/AddressDetailsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/LoggedUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/LoggedUserPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/MyAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/utils/SeleniumHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/utils/SeleniumHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +59,7 @@
       <recent name="com.seleniumdemo.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckOutTest.buyProductTest">
+  <component name="RunManager" selected="TestNG.LogInTest.logInWithValidData">
     <configuration name="CheckOutTest.buyProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumdemo" />
       <extension name="coverage">
@@ -74,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogInTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogInTest.logInWithValidData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumdemo" />
       <extension name="coverage">
         <pattern>
@@ -84,7 +88,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.seleniumdemo.tests" />
       <option name="MAIN_CLASS_NAME" value="com.seleniumdemo.tests.LogInTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="logInWithValidData" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -145,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CheckOutTest.buyProductTest" />
+        <item itemvalue="TestNG.LogInTest.logInWithValidData" />
         <item itemvalue="TestNG.RegisterTest.registerUserTest" />
+        <item itemvalue="TestNG.CheckOutTest.buyProductTest" />
         <item itemvalue="TestNG.com.seleniumdemo.tests" />
         <item itemvalue="TestNG.RegisterTest.registerUserWithSameEmailTest" />
-        <item itemvalue="TestNG.LogInTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,13 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664892922665</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added lg4j2 configuration file&#10;Added logger field in 1st Page Object">
+      <created>1664966255177</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664966255177</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit - new tests, pages added" />
     <MESSAGE value="Added New tests and Page Objects&#10;Refactored classes" />
     <MESSAGE value="Added SeleniumHelper&#10;Improved Stability of tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SeleniumHelper&#10;Improved Stability of tests" />
+    <MESSAGE value="Added lg4j2 configuration file&#10;Added logger field in 1st Page Object" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added lg4j2 configuration file&#10;Added logger field in 1st Page Object" />
   </component>
 </project>

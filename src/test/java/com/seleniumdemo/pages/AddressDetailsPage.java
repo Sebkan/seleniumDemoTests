@@ -46,6 +46,7 @@ public class AddressDetailsPage {
         this.driver = driver;
     }
     public OrderDetailsPage placeOrder(Customer customer, String comments) {
+        logger.info("Commenced typing the data");
         firstNameInput.sendKeys(customer.getFirstName());
         lastNameInput.sendKeys(customer.getLastName());
         companyNameInput.sendKeys(customer.getCompanyName());
@@ -58,7 +59,10 @@ public class AddressDetailsPage {
         emailInput.sendKeys(customer.getEmail());
         orderCommentsInput.sendKeys(comments);
         SeleniumHelper.waitForElementToBeClickable(driver,placeOrderButton);
+        logger.info("Finished typing data");
+        logger.info("Starting performing the click test");
         placeOrderButton.click();
+        logger.info("Completed the click");
         return new OrderDetailsPage(driver);
     }
 }
