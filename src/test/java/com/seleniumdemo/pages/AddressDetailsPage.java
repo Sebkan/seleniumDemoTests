@@ -2,6 +2,8 @@ package com.seleniumdemo.pages;
 
 import com.seleniumdemo.models.Customer;
 import com.seleniumdemo.utils.SeleniumHelper;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,6 +38,9 @@ public class AddressDetailsPage {
     private WebElement orderCommentsInput;
     @FindBy(id="place_order")
     private WebElement placeOrderButton;
+
+    private static final Logger logger = LogManager.getLogger();
+
     public AddressDetailsPage(WebDriver driver) {
         PageFactory.initElements(driver,this);
         this.driver = driver;
