@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4cb0022-b9b0-4a7d-b422-2eb9e514469d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/ContactFormTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/AddAllCartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/EditDataTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/LoggedUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/LoggedUserPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/MyAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/MyCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/MyCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/ProductListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/pages/ShopPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/ContactFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/ContactFormTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/tests/LogInTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/utils/SeleniumHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumdemo/utils/SeleniumHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +44,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Fcdm9tMeOS2cN8IHFvDGUWLFtb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -55,7 +68,25 @@
       <recent name="com.seleniumdemo.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ContactFormTest">
+  <component name="RunManager" selected="TestNG.AddAllCartTest.addAllProductsTest">
+    <configuration name="AddAllCartTest.addAllProductsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="seleniumdemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seleniumdemo.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seleniumdemo.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.seleniumdemo.tests.AddAllCartTest" />
+      <option name="METHOD_NAME" value="addAllProductsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactFormTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumdemo" />
       <extension name="coverage">
@@ -73,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactFormTest.contactUsWithInvalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="EditDataTest.editAccountData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumdemo" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +113,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.seleniumdemo.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.seleniumdemo.tests.ContactFormTest" />
-      <option name="METHOD_NAME" value="contactUsWithInvalidEmail" />
+      <option name="MAIN_CLASS_NAME" value="com.seleniumdemo.tests.EditDataTest" />
+      <option name="METHOD_NAME" value="editAccountData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -91,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactFormTest.contactUsWithNoName" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogInTest.editAccountData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="seleniumdemo" />
       <extension name="coverage">
         <pattern>
@@ -100,26 +131,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.seleniumdemo.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.seleniumdemo.tests.ContactFormTest" />
-      <option name="METHOD_NAME" value="contactUsWithNoName" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactFormTest.contactUsWithValidData" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="seleniumdemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.seleniumdemo.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.seleniumdemo.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.seleniumdemo.tests.ContactFormTest" />
-      <option name="METHOD_NAME" value="contactUsWithValidData" />
+      <option name="MAIN_CLASS_NAME" value="com.seleniumdemo.tests.LogInTest" />
+      <option name="METHOD_NAME" value="editAccountData" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -147,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ContactFormTest" />
-        <item itemvalue="TestNG.ContactFormTest.contactUsWithInvalidEmail" />
-        <item itemvalue="TestNG.ContactFormTest.contactUsWithValidData" />
-        <item itemvalue="TestNG.ContactFormTest.contactUsWithNoName" />
+        <item itemvalue="TestNG.AddAllCartTest.addAllProductsTest" />
+        <item itemvalue="TestNG.EditDataTest.editAccountData" />
+        <item itemvalue="TestNG.LogInTest.editAccountData" />
         <item itemvalue="TestNG.LogInTest.logInWithValidData" />
+        <item itemvalue="TestNG.ContactFormTest" />
       </list>
     </recent_temporary>
   </component>
@@ -199,15 +212,24 @@
       <option name="project" value="LOCAL" />
       <updated>1664968069400</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added ContactFormTest tests;&#10;Updated HomePage;&#10;Added Loggers.">
+      <created>1664971567457</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664971567457</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit - new tests, pages added" />
     <MESSAGE value="Added New tests and Page Objects&#10;Refactored classes" />
     <MESSAGE value="Added SeleniumHelper&#10;Improved Stability of tests" />
     <MESSAGE value="Added lg4j2 configuration file&#10;Added logger field in 1st Page Object" />
     <MESSAGE value="Corrected log4j2.xml;&#10;Added loggers to Pages;&#10;Added wait methods to SeleniumHelper;&#10;Improved stability of the tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected log4j2.xml;&#10;Added loggers to Pages;&#10;Added wait methods to SeleniumHelper;&#10;Improved stability of the tests." />
+    <MESSAGE value="Added ContactFormTest tests;&#10;Updated HomePage;&#10;Added Loggers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ContactFormTest tests;&#10;Updated HomePage;&#10;Added Loggers." />
   </component>
 </project>

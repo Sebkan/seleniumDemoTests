@@ -23,6 +23,7 @@ public class MyAccountPage {
     private WebElement passwordInput;
     @FindBy(name = "login")
     private WebElement logInBtn;
+
     private static final Logger logger = LogManager.getLogger();
 
     private WebDriver driver;
@@ -72,6 +73,7 @@ public class MyAccountPage {
         passwordInput.sendKeys(password);
         logInBtn.click();
     }
+
 
 
 }

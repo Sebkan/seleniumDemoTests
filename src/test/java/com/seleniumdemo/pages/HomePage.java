@@ -24,6 +24,8 @@ public class HomePage {
     private WebElement sentFormSpan;
     @FindBy(xpath = "//strong[text()='Test Data']")
     private WebElement wrongEmailText;
+    @FindBy(xpath = "//li[@id='menu-item-20']//span")
+    private WebElement cartSpan;
     private static final Logger logger = LogManager.getLogger();
 
     private WebDriver driver;
@@ -37,9 +39,9 @@ public class HomePage {
         myAccountBtn.click();
         return new MyAccountPage(driver);
     }
-    public ProductListPage openShopPage(){
+    public ShopPage openShopPage(){
         shopBtn.click();
-        return new ProductListPage(driver);
+        return new ShopPage(driver);
     }
 
     public HomePage contactFormValidData(String name,String email, String message){
@@ -64,5 +66,9 @@ public class HomePage {
     }
     public WebElement getErrorText(){
         return wrongEmailText;
+    }
+    public MyCartPage cartClick(){
+        cartSpan.click();
+        return new MyCartPage(driver);
     }
 }
